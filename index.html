@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>跑马灯</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#light{
+			/*color:white;*/
+			background:-webkit-linear-gradient(left,springgreen,blue,skyblue);
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+    <p id="light"></p>
+</body>
+</html>
+<script type="text/javascript">
+	var arr = ' 跑 马 灯 的 汉 子 你 威 武 雄 壮 ';
+	function pao(){
+		var first = arr.slice(0,1);
+		var last = arr.slice(1,arr.length);
+        arr = last + first;
+        light.innerHTML = arr;
+        light.style.fontSize = 40 + 'px';
+		}
+	setInterval(pao,500);
+</script>
