@@ -1,38 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>跑马灯</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-	    *{
-			margin:0;
-			padding: 0;
-			list-style: none;
-		}
-	    body{
-			background:url(css/9bdd757d493d4fd5b9782ecc12daf411.jpeg) no-repeat;
-			background-size: 100%;
-		}
-		#light{
-			/*color:white;*/
-			background:-webkit-linear-gradient(left,springgreen,blue,skyblue);
-			text-align:center;
-			margin-top:0px;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<script src="jquery-1.8.3.min.js"></script>
 </head>
+<style>
+	html{
+		max-width: 720px;
+
+	}
+	body{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		overflow-x: hidden;
+	}
+	.snow{
+		width: 100%;
+		height: 100%;
+		background: pink;
+		overflow: hidden;
+	}
+	.snow_img{
+		position: absolute;
+		top: -50px;
+		margin-left: 1px;
+	}
+</style>
 <body>
-    <p id="light"></p>
+<div class="snow">
+
+
+</div>
+<script>
+	$(function(){
+		$('body').css("height",$(window).height())
+		var wid=$(".snow").width();
+		var html_snow="<img src='snow.png' class='snow_img'>";
+		setInterval(function(){$(".snow").append(html_snow);snowFlow();},100);
+		function snowFlow(){
+			$(".snow_img").each(function(index){
+				var snow_time=(Math.random()*10+4)*1000;
+				var wid_snow=Math.floor(Math.random()*40+5)+'px';
+				var float_left=Math.random()*wid*2-wid+"px";
+				var wid_left=Math.random()*wid+"px";
+				if( $(this).css("margin-left")==1+"px"){
+					$(this).css("margin-left",wid_left);
+				}
+				if($(this).width()==0 || $(this).width()==50 ){
+					$(this).width(wid_snow);
+				}
+				$(this).animate({top:800+"px",left:float_left,},snow_time);
+				if($(this).offset().top==800){
+					$(this).remove();
+				}
+			})
+		}
+	});
+
+</script>
 </body>
 </html>
-<script type="text/javascript">
-	var arr = ' 跑 马 灯 的 汉 子 你 威 武 雄 壮 ';
-	function pao(){
-		var first = arr.slice(0,1);
-		var last = arr.slice(1,arr.length);
-        arr = last + first;
-        light.innerHTML = arr;
-        light.style.fontSize = 40 + 'px';
-		}
-	setInterval(pao,500);
-</script>
