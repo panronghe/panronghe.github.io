@@ -9,59 +9,43 @@
 	<script src="jquery-1.8.3.min.js"></script>
 </head>
 <style>
-	html{
-		max-width: 720px;
-
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
-	body{
-		width: 100%;
+	img{
 		height: 100%;
-		margin: 0 auto;
-		overflow-x: hidden;
-	}
-	.snow{
-		width: 100%;
-		height: 100%;
-		background: pink;
-		overflow: hidden;
-	}
-	.snow_img{
+		width: 60%;
 		position: absolute;
-		top: -50px;
-		margin-left: 1px;
+		margin-left: 20%;
+	}
+	h1{
+		font-family: 楷体;
+		font-size: 90px;
 	}
 </style>
 <body>
-<div class="snow">
-
+<div>
+	<img src="images/微信图片_20210403125001.jpg" alt="帅哥">
+	<h1 style="margin-left:45%;position:absolute;color: orangered;font-weight: bolder">潘荣和</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<marquee>
+		<b style="color: yellow">潘荣和&nbsp;&nbsp;&nbsp;</b>
+		<br>
+		<b style="color: gray">潘荣和</b>&nbsp;&nbsp;<br>
+		<b>潘荣和</b>&nbsp;
+		<b style="color: greenyellow">潘荣和</b>
+		<br>
+		<br>
+		<i style="color: blue">潘荣和</i>
+	</marquee>
 
 </div>
-<script>
-	$(function(){
-		$('body').css("height",$(window).height())
-		var wid=$(".snow").width();
-		var html_snow="<img src='snow.png' class='snow_img'>";
-		setInterval(function(){$(".snow").append(html_snow);snowFlow();},100);
-		function snowFlow(){
-			$(".snow_img").each(function(index){
-				var snow_time=(Math.random()*10+4)*1000;
-				var wid_snow=Math.floor(Math.random()*40+5)+'px';
-				var float_left=Math.random()*wid*2-wid+"px";
-				var wid_left=Math.random()*wid+"px";
-				if( $(this).css("margin-left")==1+"px"){
-					$(this).css("margin-left",wid_left);
-				}
-				if($(this).width()==0 || $(this).width()==50 ){
-					$(this).width(wid_snow);
-				}
-				$(this).animate({top:800+"px",left:float_left,},snow_time);
-				if($(this).offset().top==800){
-					$(this).remove();
-				}
-			})
-		}
-	});
-
-</script>
 </body>
 </html>
