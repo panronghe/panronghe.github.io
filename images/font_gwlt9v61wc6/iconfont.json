@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "307352",
+      "name": "搜索",
+      "font_class": "iconsousuo",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5052914",
+      "name": "米饭",
+      "font_class": "mifan",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "10878484",
+      "name": "右切换",
+      "font_class": "youqiehuan",
+      "unicode": "e539",
+      "unicode_decimal": 58681
+    },
+    {
+      "icon_id": "13285645",
+      "name": "小圆点",
+      "font_class": "xiaoyuandian",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "20984708",
+      "name": "购物 车 (1)",
+      "font_class": "gouwuche1",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    }
+  ]
+}

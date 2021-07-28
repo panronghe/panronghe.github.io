@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration:none;
+}
+body{
+    font-family:Helvetica Neue;
+}
+#header{
+    width: auto;
+    height: auto;
+}
+
+#header_imge{
+    width: 100%;
+    height:150px;
+    margin:0px;
+
+}
+
+.nav{
+    position: relative;
+    width: 100%;
+    height:40px;
+    background-color: #333;
+}
+.nav_center{
+    position: relative;
+    width: 1226px;
+    height: 40px;
+    margin:0 146.6px;
+}
+
+.nav_left{
+    position: relative;
+    float: left;
+    width:794.13px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.nav_center_mid{
+    position: relative;
+    float:right;
+    line-height: 40px;
+    width: 142px;
+    font-size: 12px;
+}
+.nav_center_right{
+    margin-right:-9px;
+    position: relative;
+    float: right;
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    background-color: #424242;
+}
+
+.iconfont icon-gouwuche:hover{
+    color: yellow;
+}
+.car_list{
+    color: #B0B0AE;
+    display: block;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Helvetica Neue;
+}
+
+
+.car_list:hover{
+    color: tomato;
+    background-color: white;
+}
+
+.icon-gouwuche1{
+   line-height:40px;
+
+
+}
+.car_list_select{
+    width: 316px;
+    height: 0px;
+    overflow:hidden;
+    position: absolute;
+    float:left;
+    line-height: 100px;
+    text-align: center;
+    margin-top:40px;
+    margin-left: 919px;
+    transition: all 0.3s linear 0s;
+}
+
+.nofollow{
+    color: #b0b0b0;
+    height:40px;
+    display: inline-block;
+    font-size:12px;
+}
+
+.nofollow:hover{
+    color: white;
+}
+
+.sep {
+    font-family: sans-serif;
+    color: #424242;
+    margin: 0 1px;
+    height: auto;
+    width: auto;
+}
+
+/*导航栏下面1*/
+
+.site-header{
+    height:100px;
+    width:100%;
+    clear:both;
+    border: turquoise double 1px;
+  }
+
+.container{
+    width:1226px;
+    height:100px;
+    margin-right: auto;
+    margin-left: auto;
+    border: wheat solid 1px;
+}
+
+.container a{
+    width: 56px;
+    height:56px;
+    line-height: 100px;
+    overflow: hidden;
+    display: block;
+}
+.container em{
+    line-height:100px;
+    font-size:56px;
+    color: tomato;
+}
+.container em:hover{
+    margin-left: 20px;
+}
