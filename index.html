@@ -3,10 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>个人博客</title>
+	<style type="text/css">
+
+		body{
+			height: 700px;
+			width: 1519px;
+			background:url("images/1470937794269.jpg") no-repeat;
+			background-size:100%;
+		}
+
+		#time_now{
+			position: absolute;
+			left:-500px;
+			top:100px;
+			font-weight:bold;
+			font-family: 仿宋;
+		}
+		#htmer_time{
+			font-size:50px;
+			position: absolute;
+			left:-55px;
+			font-family: "Candara Light";
+		}
+		#item{
+			display: flex;
+			justify-content: center;
+		}
+	</style>
 </head>
 <link rel="stylesheet" href="css/panronghe.css">
 <link rel="stylesheet" href="images/font_gwlt9v61wc6/iconfont.css">
-<body>
+<script src="js/jquery-1.8.3.min.js"></script>
+
+
+<body id="body">
 <!--	<div id="header">-->
 <!--		<img id="header_imge" src="./images/header_image.gif" alt="影子">-->
 <!--	</div>-->
@@ -66,79 +96,152 @@
 
 <!--		导航栏下面-->
 
-		<div class="site-header">
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
-			<marguee>杨明</marguee>
+
+
+
 			<div class="container">
 				<a class="container_a" href="#"><em class="iconfont icon-mifan"></em></a>
 			</div>
-		</div>
+
+<!--博客时间-->
+		<div id="time_now" style="font-size:30px;color: #F08047; margin: 0 600px;width:600px;" class="ui inverted m-text-thin m-text-spaced">
+			潘荣和博客已经启航<br><span id="htmer_time" class="item m-text-thin">(*๓´╰╯`๓)</span></div>
+
 
 
 
 	</div>
-<div style="width: 100%;height: 100%;margin: 0 auto">
-	<img src="./images/4e441d00ba1b8b2c8db4f118f4bdf027_1.jpg" alt="">
-</div>
+
+
 </body>
 </html>
 <script type="text/javascript">
+
 	//var car = document.getElementsByClassName("car_list_select");
 	document.getElementsByClassName("car_list")[0].onmouseover = function(){
 		document.getElementsByClassName("car_list_select")[0].style.height='100px';
 		document.getElementsByClassName("car_list_select")[0].style.boxShadow='0 2px 10px rgb(0 0 0 / 15%)';
-	}
+	};
 	document.getElementsByClassName("car_list")[0].onmouseout = function(){
 		document.getElementsByClassName("car_list_select")[0].style.height='0px';
+	};
+             // var content = document.getElementById("content");
+
+	// var danMu = document.getElementById("danMu");
+
+/*	function ball(){
+		var content.style.top = (Math.floor(Math.random()*10000000)%600) + 'px';
+		var content.style.left = (Math.floor(Math.random()*10000000)%1000) + 'px';
+		setInterval(function(){
+
+			// 获取当前的位置，并且下降
+			content.style.top = content.offsetTop + 10 + 'px';
+			content.style.top = content.offsetLeft + ((Math.floor(Math.random()*1000000)%10)-5) + 'px';
+			if (content.offsetTop > 700) {
+				content.offsetTop = ((Math.floor(Math.random()*1000000)%20)-15) + 'px';
+			}
+		},100)
 	}
+	for(var i = 0; i < 10 ; i++){
+		ball();
+	}*/
+
+
+
+
+	/* 鼠标特效 */
+
+	var a_idx = 0;
+	jQuery(document).ready(function($) {
+		$("body").click(function(e) {
+			var a = new Array("❤潘荣和❤","❤C❤","❤ヾ(^∀^)ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
+			var $i = $("<span></span>").text(a[a_idx]);
+			a_idx = (a_idx + 1) % a.length;
+			var x = e.pageX,
+					y = e.pageY;
+			$i.css({
+				"z-index": 999,
+				"top": y - 20,
+				"left": x,
+				"position": "absolute",
+				"font-weight": "bold",
+				"color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+			});
+			$("body").append($i);
+			$i.animate({
+						"top": y - 180,
+						"opacity": 0
+					},
+					2500,
+					function() {
+						$i.remove();
+					});
+		});
+	});
+
+	// 随机小球
+  //创建span->设置小球的随机位置->设置小球的新位置->改变随机颜色->
+	function snow(){
+		var span = document.createElement('marquee');
+		span.innerHTML = '潘荣和';
+// 随机位置
+		span.style.top = Math.floor((Math.random()*100000)%600)+'px';
+		// span.style.left = Math.floor((Math.random()*100000)%500)+'px';
+//随机颜色
+		var r = Math.floor(Math.random()*100000)%256;
+		var g = Math.floor(Math.random()*100000)%256;
+		var b = Math.floor(Math.random()*100000)%256;
+		span.style.color = 'rgba(' + r +','+ g +','+ b +',1)';
+
+		span.style.position = 'absolute';
+		span.style.transition = 'all 2s linear 0s';
+		body. appendChild(span);//把某个节点插入另一个节点内
+
+	}
+	snow();
+
+	setInterval(function(){
+		snow();
+	},1000)
+
+
+	// 运行时间统计
+	function secondToDate(second) {
+		if (!second) {
+			return 0;
+		}
+		var time = new Array(0, 0, 0, 0, 0);
+		if (second >= 365 * 24 * 3600) {
+			time[0] = parseInt(second / (365 * 24 * 3600));
+			second %= 365 * 24 * 3600;
+		}
+		if (second >= 24 * 3600) {
+			time[1] = parseInt(second / (24 * 3600));
+			second %= 24 * 3600;
+		}
+		if (second >= 3600) {
+			time[2] = parseInt(second / 3600);
+			second %= 3600;
+		}
+		if (second >= 60) {
+			time[3] = parseInt(second / 60);
+			second %= 60;
+		}
+		if (second > 0) {
+			time[4] = second;
+		}
+		return time;
+	}
+	function setTime() {
+		/*此处为网站的创建时间*/
+		var create_time = Math.round(new Date(Date.UTC(2020, 12, 13, 9, 15, 15)).getTime() / 1000);
+		var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+		currentTime = secondToDate((timestamp - create_time));
+		currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+				+ currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+				+ '秒';
+		document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+	}
+	setInterval(setTime, 1000);
+
 </script>

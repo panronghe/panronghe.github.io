@@ -127,7 +127,7 @@ body{
     height:100px;
     margin-right: auto;
     margin-left: auto;
-    border: wheat solid 1px;
+    /*border: wheat solid 1px;*/
 }
 
 .container a{
