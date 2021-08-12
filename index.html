@@ -6,8 +6,6 @@
 	<style type="text/css">
 
 		body{
-			height: 700px;
-			width: 1519px;
 			background:url("images/1470937794269.jpg") no-repeat;
 			background-size:100%;
 		}
@@ -28,6 +26,12 @@
 		#item{
 			display: flex;
 			justify-content: center;
+		}
+		#myaudio{
+			position: absolute;
+			margin-left: 6%;
+			margin-top: 12%;
+			background-color: orange;
 		}
 	</style>
 </head>
@@ -97,8 +101,6 @@
 <!--		导航栏下面-->
 
 
-
-
 			<div class="container">
 				<a class="container_a" href="#"><em class="iconfont icon-mifan"></em></a>
 			</div>
@@ -109,13 +111,30 @@
 
 
 
-
 	</div>
+
+<audio id="myaudio" src="./images/he.mp3" autoplay="autoplay" controls="controls"  loop="loop" >
+</audio>
+
+
+
+
 
 
 </body>
 </html>
 <script type="text/javascript">
+
+/*	var video = document.getElementById("myaudio");
+	video.onclick = function (){
+		video.play();
+	}*/
+
+/*	video.onmouseover=function (){
+		video.play();
+		alert("111");
+		console.log("132");
+	}*/
 
 	//var car = document.getElementsByClassName("car_list_select");
 	document.getElementsByClassName("car_list")[0].onmouseover = function(){
