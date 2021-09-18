@@ -6,8 +6,9 @@
 	<style type="text/css">
 
 		body{
-			background:url("images/1470937794269.jpg") no-repeat;
-			background-size:100%;
+			height: 100vh;
+			background:url("images/9.jpg") no-repeat;
+			background-size:cover;
 		}
 
 		#time_now{
@@ -18,7 +19,7 @@
 			font-family: 仿宋;
 		}
 		#htmer_time{
-			font-size:50px;
+			font-size:60px;
 			position: absolute;
 			left:-55px;
 			font-family: "Candara Light";
@@ -44,60 +45,60 @@
 <!--	<div id="header">-->
 <!--		<img id="header_imge" src="./images/header_image.gif" alt="影子">-->
 <!--	</div>-->
-	<div class="nav">
-		<div class="nav_center">
-			<div class="nav_left">
-				<a class="nofollow" href="#">荣和商城</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">MIUI</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">loT</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">云服务</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">天星数科</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">有品</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">小爱开放平台</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">企业团购</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">资质证照</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">协议规则</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">下载app</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">智能生活</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">Select Location</a>
-			</div>
+<!--	<div class="nav">-->
+<!--		<div class="nav_center">-->
+<!--			<div class="nav_left">-->
+<!--				<a class="nofollow" href="#">荣和商城</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">MIUI</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">loT</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">云服务</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">天星数科</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">有品</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">小爱开放平台</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">企业团购</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">资质证照</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">协议规则</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">下载app</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">智能生活</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">Select Location</a>-->
+<!--			</div>-->
 
-			<div class="nav_center_right">
-				<a href="#"  class="car_list">
-					<em class="iconfont icon-gouwuche1"></em>
-					<span>购物车</span>
-					<span>(0)</span>
-				</a>
-			</div>
+<!--			<div class="nav_center_right">-->
+<!--				<a href="#"  class="car_list">-->
+<!--					<em class="iconfont icon-gouwuche1"></em>-->
+<!--					<span>购物车</span>-->
+<!--					<span>(0)</span>-->
+<!--				</a>-->
+<!--			</div>-->
 
-			<div id="car_d" class="car_list_select">
-				<span style="font-size:12px;color:#424242;">
-					购物车中还没有商品，赶紧选购吧!
-				</span>
-			</div>
+<!--			<div id="car_d" class="car_list_select">-->
+<!--				<span style="font-size:12px;color:#424242;">-->
+<!--					购物车中还没有商品，赶紧选购吧!-->
+<!--				</span>-->
+<!--			</div>-->
 
-			<div class="nav_center_mid">
-				<a class="nofollow" href="#">登录</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">注册</a>
-				<span class="sep">|</span>
-				<a class="nofollow" href="#">消息通知</a>
-			</div>
+<!--			<div class="nav_center_mid">-->
+<!--				<a class="nofollow" href="#">登录</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">注册</a>-->
+<!--				<span class="sep">|</span>-->
+<!--				<a class="nofollow" href="#">消息通知</a>-->
+<!--			</div>-->
 
-		</div>
-
+<!--		</div>-->
+<!--	</div>-->
 <!--		导航栏下面-->
 
 
@@ -111,20 +112,60 @@
 
 
 
-	</div>
 
 <audio id="myaudio" src="./images/he.mp3" autoplay="autoplay" controls="controls"  loop="loop" >
 </audio>
-
-
-
-
 
 
 </body>
 </html>
 <script type="text/javascript">
 
+
+	// 关于this
+	// var a = 20;
+	// function fn() {
+	// 	'use strict';
+	// 	console.log(this.a);
+	// }
+	// fn();
+
+	// var a = 20;
+	// function fn() {
+	// 	function foo() {
+	// 		console.log(this.a);
+	// 	}
+	// 	foo();
+	// }
+	// fn();
+
+	// var a = 20;
+	// var obj = {
+	// 	a: 10,
+	// 	c: this.a + 20,
+	// 	fn: function () {
+	// 		return this.a;
+	// 	}
+	// }
+	//
+	// console.log(obj.c);
+	// console.log(obj.fn());
+
+/*	'use strict';
+	var a = 20;
+	function foo() {
+		var a = 1;
+		var obj = {
+			a: 10,
+			c: this.a + 20,
+			fn: function () {
+				return this.a;
+			}
+		}
+		return obj.c;
+	}
+	console.log(foo());    // ？
+	console.log(window.foo());  // ?*/
 /*	var video = document.getElementById("myaudio");
 	video.onclick = function (){
 		video.play();
@@ -137,13 +178,13 @@
 	}*/
 
 	//var car = document.getElementsByClassName("car_list_select");
-	document.getElementsByClassName("car_list")[0].onmouseover = function(){
+/*	document.getElementsByClassName("car_list")[0].onmouseover = function(){
 		document.getElementsByClassName("car_list_select")[0].style.height='100px';
 		document.getElementsByClassName("car_list_select")[0].style.boxShadow='0 2px 10px rgb(0 0 0 / 15%)';
 	};
 	document.getElementsByClassName("car_list")[0].onmouseout = function(){
 		document.getElementsByClassName("car_list_select")[0].style.height='0px';
-	};
+	};*/
              // var content = document.getElementById("content");
 
 	// var danMu = document.getElementById("danMu");
@@ -173,7 +214,7 @@
 	var a_idx = 0;
 	jQuery(document).ready(function($) {
 		$("body").click(function(e) {
-			var a = new Array("❤潘荣和❤","❤C❤","❤ヾ(^∀^)ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
+			var a = new Array("❤潘荣和❤","❤C❤","❤ヾ(^∀^)潘荣和ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
 			var $i = $("<span></span>").text(a[a_idx]);
 			a_idx = (a_idx + 1) % a.length;
 			var x = e.pageX,
@@ -204,8 +245,8 @@
 		var span = document.createElement('marquee');
 		span.innerHTML = '潘荣和';
 // 随机位置
-		span.style.top = Math.floor((Math.random()*100000)%600)+'px';
-		// span.style.left = Math.floor((Math.random()*100000)%500)+'px';
+		span.style.top = Math.floor((Math.random()*100000)%100)+'vh';
+		//span.style.marginLeft = Math.floor((Math.random()*100000)%900)+'px';
 //随机颜色
 		var r = Math.floor(Math.random()*100000)%256;
 		var g = Math.floor(Math.random()*100000)%256;
