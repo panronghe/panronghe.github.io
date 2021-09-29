@@ -7,6 +7,7 @@
 
 		body{
 			height: 100vh;
+			width: 100%;
 			background:url("images/9.jpg") no-repeat;
 			background-size:cover;
 		}
@@ -24,15 +25,16 @@
 			left:-55px;
 			font-family: "Candara Light";
 		}
-		#item{
-			display: flex;
-			justify-content: center;
-		}
 		#myaudio{
 			position: absolute;
 			margin-left: 6%;
-			margin-top: 20%;
+			margin-top: 25%;
 			background-color: orange;
+		}
+		table{
+			color: turquoise;
+			font-size: 25px;
+			position: absolute;
 		}
 	</style>
 </head>
@@ -42,79 +44,30 @@
 
 
 <body id="body">
-<!--	<div id="header">-->
-<!--		<img id="header_imge" src="./images/header_image.gif" alt="影子">-->
-<!--	</div>-->
-<!--	<div class="nav">-->
-<!--		<div class="nav_center">-->
-<!--			<div class="nav_left">-->
-<!--				<a class="nofollow" href="#">荣和商城</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">MIUI</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">loT</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">云服务</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">天星数科</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">有品</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">小爱开放平台</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">企业团购</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">资质证照</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">协议规则</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">下载app</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">智能生活</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">Select Location</a>-->
-<!--			</div>-->
 
-<!--			<div class="nav_center_right">-->
-<!--				<a href="#"  class="car_list">-->
-<!--					<em class="iconfont icon-gouwuche1"></em>-->
-<!--					<span>购物车</span>-->
-<!--					<span>(0)</span>-->
-<!--				</a>-->
-<!--			</div>-->
+<!--个人简介-->
+<div>
+	<table>
+		<tr>
+			<td>潘荣和:</td>
+			<td>姓:潘,名:荣和。真实身份为上海市荣和集团董事长,现隐世南宁市马山县上伏贝屯</td>
+		</tr>
+		<tr>
 
-<!--			<div id="car_d" class="car_list_select">-->
-<!--				<span style="font-size:12px;color:#424242;">-->
-<!--					购物车中还没有商品，赶紧选购吧!-->
-<!--				</span>-->
-<!--			</div>-->
+		</tr>
+	</table>
+</div>
 
-<!--			<div class="nav_center_mid">-->
-<!--				<a class="nofollow" href="#">登录</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">注册</a>-->
-<!--				<span class="sep">|</span>-->
-<!--				<a class="nofollow" href="#">消息通知</a>-->
-<!--			</div>-->
-
-<!--		</div>-->
-<!--	</div>-->
-<!--		导航栏下面-->
-
-
-			<div class="container">
-				<a class="container_a" href="#"><em class="iconfont icon-mifan"></em></a>
-			</div>
 
 <!--博客时间-->
 		<div id="time_now" style="font-size:30px;color: #F08047; margin: 0 600px;width:600px;" class="ui inverted m-text-thin m-text-spaced">
 			潘荣和博客已经启航<br><span id="htmer_time" class="item m-text-thin">(*๓´╰╯`๓)</span></div>
 
-
-
-
+<!--播放器-->
+<div>
 <audio id="myaudio" src="./images/he.mp3" autoplay="autoplay" controls="controls"  loop="loop" >
 </audio>
+</div>
 
 
 </body>
