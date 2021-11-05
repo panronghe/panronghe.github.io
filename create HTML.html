@@ -1,0 +1,207 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML</title>
+</head>
+<body>
+
+  <table>
+    <caption>这是标题</caption>
+    <tr>
+      <td>第一行第一列</td>
+      <td>第一行第er列</td>
+    </tr>
+    <tr>
+      <td>第二行第一列</td>
+      <td>第二行第er列</td>
+    </tr>
+  </table>
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="网站,html5">
+  <meta name="description" content="这是第一个html5网站，属于个人标签的网站">
+  <title>
+    html5标准网站
+  </title>
+  <style type="text/css">
+
+
+    #flex{
+      width: 100%;
+      height: 300px;
+      background: pink;
+      display: flex;
+
+      /*justify-content: space-around;*/
+      /*默认的主轴是X轴，row*/
+      /*flex-direction: row;column*/
+      /*justify-content 是设置主轴上子元素的排列方式*/
+      /*justify-content: start;靠左*/
+      /*justify-content: flex-end;靠右*/
+      /*justify-content: center;居中 */
+      /*justify-content: space-around;平分剩余空间*/
+      /*justify-content: space-between;先两边沾边，然后平分剩余空间*/
+
+      /*flex布局中，默认是不换行的，如果装不下，就自动缩小子元素的大小*/
+      /*flex-wrap: wrap;nowrap*/
+
+      /*侧轴（单行） 多行无效*/
+      /*align-items 设置侧轴上子元素的排列方式（单行）*/
+      /*align-items: flex-start; flex-end 默认值，从下到上*/
+      /*align-items: center; 挤在一起居中*/
+      /*align-items: stretch; 拉伸，子元素不要给高度。拉得跟父元素一样高*/
+
+      /*侧轴（多行） 单行无效。要设置换行*/
+      /*align-content: flex-start;*/
+      /*align-content: flex-end;*/
+      /*align-content: center;*/
+      /*align-content: space-around;*/
+      /*align-content: space-between;*/
+      /*align-content: stretch;设置子元素高度平分父元素*/
+
+      /*父项属性，同时设置主轴以及是否换行*/
+      /*flex-flow: column wrap;*/
+
+      /*子属性分配剩余空间*/
+      /*flex: 2;(剩余分成两份)*/
+
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    div span:nth-child(1){
+      width: 200px;
+      height: 100px;
+      background: purple;
+      margin-right: 5px;
+
+      /*只控制其中某一个盒子align-self*/
+      align-self: flex-end;
+    }
+
+    div span:nth-child(2){
+      flex: 1;
+      /*排列顺序 */
+      order: -1;
+      background: purple;
+      margin-right: 5px;
+    }
+
+    div span:nth-child(3){
+      width: 200px;
+      height: 100px;
+      background: purple;
+      margin-right: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+<!--flex布局-->
+  <div id="flex">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </div>
+
+<br>
+
+<div>
+  <span id="num">0</span>
+  <button id="btn">+</button>
+</div>
+
+
+<iframe src="./index.html" frameborder="0" width="200" height="200"></iframe>
+<div>
+  这是这个网页的内容!
+  <vedio>
+    <source src="">
+  </vedio>
+</div>
+
+<div>
+  <input type="text" value="">
+</div>
+
+<div style="background-color: tomato;height: 2000px">
+1
+</div>
+</body>
+
+<script type="text/javascript">
+  let strp = "zhaochucishuzuiduodezifu";
+  var o = {};
+  for (let i = 0, l = strp.length; i < l; i++) {
+    // var char = strp[i];
+    var char = strp.charAt(i);
+    if (o[char]) { //char就是对象o的一个属性，o[char]是属性值，o[char]控制出现的次数
+      o[char]++; //次数加1
+    } else {
+      o[char] = 1; //若第一次出现，次数记为1
+    }
+  }
+  console.log(o); //输出的是完整的对象，记录着每一个字符及其出现的次数
+  //遍历对象，找到出现次数最多的字符和次数
+  var max = 0;
+  var maxChar = null;
+  for (var key in o) {
+    if (max < o[key]) {
+      max = o[key]; //max始终储存次数最大的那个
+      maxChar = key; //那么对应的字符就是当前的key
+    }
+  }
+  console.log("最多的字符是" + maxChar); // 最多的字符是u
+  console.log("出现的次数是" + max); // 出现的次数是5
+
+
+
+
+
+  let str = '123456ABC5656';
+  let newstr = '';
+  for (let i = 0;i<str.length;i++){
+    if (newstr.indexOf(str[i]) ===-1){
+      newstr += str[i];
+    }
+  }
+  console.log(newstr);
+
+
+
+  let date = new Date();
+  console.log(date.getMonth()>9?date.getMonth()+1:'0' + (date.getMonth()+1));
+
+
+  let btn = document.getElementById("btn");
+  let numa = document.getElementById('num');
+  btn.onclick = function (){
+    let numq  = parseInt(numa.innerText);
+    numq++;
+    numa.innerHTML = numq;
+  };
+
+  localStorage.setItem('car','');
+  console.log(localStorage);
+
+  console.log(window);
+  console.log(window.document);
+
+/*  window.onclick = function (){
+    // alert("你按下了键盘！");
+    console.log(window.navigator.appName);
+    console.log(window.navigator.appVersion);
+  }*/
+
+</script>
+
+</html>
