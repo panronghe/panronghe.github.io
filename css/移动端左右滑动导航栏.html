@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>移动端左右滑动导航栏</title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .menu-outer{
+      height: 1.8rem;
+      overflow: hidden;
+    /*//父元素设置固定高度，小于子元素高度，超出隐藏滚动条*/
+
+    }
+    .menu{
+      width: 100%;
+      overflow: auto;
+      margin: 0 auto;
+      height: 120%;
+    /*子元素ul的高度超出父元素，由于父元素设置hidden,则隐藏了滚动时候的横向滚动条了*/
+    white-space: nowrap;
+    }
+    .menu>li{
+      width: auto;
+      display: inline-block;
+      margin: 0 0.3rem;
+    }
+    .menu>li>a{
+      color: #000;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="menu-outer">
+  <ul class="menu">
+    <li><a href="javascript:void(0);">15天预报</a></li>
+    <li><a href="javascript:void(0);">逐小时预报</a></li>
+    <li><a href="javascript:void(0);">长期预报</a></li>
+    <li><a href="javascript:void(0);">当前天气</a></li>
+    <li><a href="javascript:void(0);">AQI预报</a></li>
+    <li><a href="javascript:void(0);">AQI逐小时</a></li>
+    <li><a href="javascript:void(0);">AQI城市排名</a></li>
+    <li><a href="javascript:void(0);">天气指数</a></li>
+    <li><a href="javascript:void(0);">台风路径</a></li>
+    <li><a href="javascript:void(0);">天气要闻</a></li>
+  </ul>
+</div>
+</body>
+</html>
