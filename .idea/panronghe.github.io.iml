@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="qidi_2018" />
+    <orderEntry type="module" module-name="实训三" />
   </component>
 </module>

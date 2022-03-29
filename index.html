@@ -6,11 +6,15 @@
 	<style type="text/css">
 
 		body{
+			padding: 0;
+			margin: 0;
 			height: 100vh;
 			width: 100%;
-			background:url("images/8bf5fc8167f842fabebebbe471f09eb.jpg") no-repeat;
-			background-size:cover;
+			background:url("images/aaaba64f7c2e7c65c2c9e094a500565.jpg") no-repeat;
+			background-size:100% 100%;
 		}
+
+
 
 		#time_now{
 			position: absolute;
@@ -44,19 +48,6 @@
 
 
 <body id="body">
-
-<!--个人简介-->
-<div>
-<!--	<table>-->
-<!--		<tr>-->
-<!--			<td>潘荣和:</td>-->
-<!--			<td>姓:潘,名:荣和。真实身份为上海市荣和集团董事长,现隐世南宁市马山县上伏贝屯</td>-->
-<!--		</tr>-->
-<!--		<tr>-->
-
-<!--		</tr>-->
-<!--	</table>-->
-</div>
 
 
 <!--博客时间-->
@@ -167,7 +158,7 @@
 	var a_idx = 0;
 	jQuery(document).ready(function($) {
 		$("body").click(function(e) {
-			var a = new Array("❤潘荣和❤","❤C❤","❤ヾ(^∀^)潘荣和ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
+			var a = new Array("❤潘荣和❤","❤潘玉萍❤","❤C❤","❤ヾ(^∀^)潘荣和ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
 			var $i = $("<span></span>").text(a[a_idx]);
 			a_idx = (a_idx + 1) % a.length;
 			var x = e.pageX,
@@ -196,7 +187,7 @@
   //创建span->设置小球的随机位置->设置小球的新位置->改变随机颜色->
 	function snow(){
 		var span = document.createElement('marquee');
-		span.innerHTML = '生日快乐喔！';
+		span.innerHTML = '祝潘玉萍生日快乐！';
 // 随机位置
 		span.style.top = Math.floor((Math.random()*100000)%100)+'vh';
 		//span.style.marginLeft = Math.floor((Math.random()*100000)%900)+'px';
@@ -247,7 +238,7 @@
 	}
 	function setTime() {
 		/*此处为网站的创建时间*/
-		var create_time = Math.round(new Date(Date.UTC(1999, 2, 21, 0, 0, 0)).getTime() / 1000);
+		var create_time = Math.round(new Date(Date.UTC(2001, 3, 3, 0, 0, 0)).getTime() / 1000);
 		var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
 		currentTime = secondToDate((timestamp - create_time));
 		currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
