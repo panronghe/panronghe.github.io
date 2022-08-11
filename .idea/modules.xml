@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../E-commerce-master/.idea/E-commerce-master.iml" filepath="$PROJECT_DIR$/../E-commerce-master/.idea/E-commerce-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../毕业/nodejs05x10/.idea/nodejs05x10.iml" filepath="$PROJECT_DIR$/../毕业/nodejs05x10/.idea/nodejs05x10.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/panronghe.github.io.iml" filepath="$PROJECT_DIR$/.idea/panronghe.github.io.iml" />
       <module fileurl="file://$USER_HOME$/qidi_2018/.idea/qidi_2018.iml" filepath="$USER_HOME$/qidi_2018/.idea/qidi_2018.iml" />
+      <module fileurl="file://$USER_HOME$/WebstormProjects/untitled/.idea/untitled.iml" filepath="$USER_HOME$/WebstormProjects/untitled/.idea/untitled.iml" />
       <module fileurl="file://H:/实训三/.idea/实训三.iml" filepath="H:/实训三/.idea/实训三.iml" />
+      <module fileurl="file://H:/实训一/答辩/源码/.idea/源码.iml" filepath="H:/实训一/答辩/源码/.idea/源码.iml" />
     </modules>
   </component>
 </project>

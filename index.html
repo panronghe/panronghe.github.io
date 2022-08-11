@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>祝你快乐，不止生日</title>
+	<title>驴的故事</title>
 	<style type="text/css">
 
 		body{
@@ -10,7 +10,7 @@
 			margin: 0;
 			height: 100vh;
 			width: 100%;
-			background:url("images/aaaba64f7c2e7c65c2c9e094a500565.jpg") no-repeat;
+			/* background:url("images/aaaba64f7c2e7c65c2c9e094a500565.jpg") no-repeat; */
 			background-size:100% 100%;
 		}
 
@@ -52,11 +52,11 @@
 
 <!--博客时间-->
 		<div id="time_now" style="font-size:30px;color: #F08047; margin: 0 600px;width:600px;" class="ui inverted m-text-thin m-text-spaced">
-			你的路途已经启航<br><span id="htmer_time" class="item m-text-thin">(*๓´╰╯`๓)</span></div>
+			从前有一头驴，它从马山走去沙漠，走了很久很久，走了...<br><span id="htmer_time" class="item m-text-thin">(*๓´╰╯`๓)</span></div>
 
 <!--播放器-->
 <div>
-<audio id="myaudio" src="./images/群星 - 生日快乐.mp3" autoplay="autoplay" controls="controls"  loop="loop" >
+<audio id="myaudio" src="./images/儿歌、快乐小天使 - 我有一只小毛驴 (儿歌发烧碟).mp3" autoplay="autoplay" controls="controls"  loop="loop" >
 </audio>
 </div>
 
@@ -64,8 +64,6 @@
 </body>
 </html>
 <script type="text/javascript">
-
-
 	// 关于this
 	// var a = 20;
 	// function fn() {
@@ -158,7 +156,7 @@
 	var a_idx = 0;
 	jQuery(document).ready(function($) {
 		$("body").click(function(e) {
-			var a = new Array("❤潘荣和❤","❤潘玉萍❤","❤C❤","❤ヾ(^∀^)潘荣和ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
+			var a = new Array("❤潘荣和❤","❤❤","❤C❤","❤ヾ(^∀^)潘荣和ﾉ ❤","❤python❤","❤٩(๑❛ᴗ❛๑)۶ css❤","❤java❤","❤( • ̀ω•́ )✧ html❤","❤C#❤","❤┗(•ω•;)┛❤","❤C++❤","❤(＾＿－)vue❤","❤SQL❤","❤(^_−)☆❤","❤javascrpit❤","❤ヾ(@^▽^@)ノ❤");
 			var $i = $("<span></span>").text(a[a_idx]);
 			a_idx = (a_idx + 1) % a.length;
 			var x = e.pageX,
@@ -202,11 +200,11 @@
 		body. appendChild(span);//把某个节点插入另一个节点内
 
 	}
-	snow();
+	// snow();
 
-	setInterval(function(){
-		snow();
-	},1000)
+	// setInterval(function(){
+	// 	snow();
+	// },1000)
 
 
 	// 运行时间统计
